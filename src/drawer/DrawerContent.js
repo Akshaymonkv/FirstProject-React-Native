@@ -63,7 +63,7 @@ const styles = StyleSheet.create(
             flexDirection: 'row',
             alignItems: 'center'
         },
-        profileImgDetail:{
+        profileImgDetail:{ 
             alignItems: 'center',
             justifyContent: 'center'
         },

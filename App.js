@@ -10,8 +10,10 @@ import Settings from "./src/drawer/Settings";
 import Aboutus from "./src/drawer/Aboutus";
 import DrawerContent from "./src/drawer/DrawerContent"
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
+const Tab = createMaterialTopTabNavigator()
 
 function AppStack(){
   return(
@@ -64,6 +66,17 @@ function MyDrawer(){
       component = {Aboutus}
            />
     </Drawer.Navigator>
+  )
+}
+
+function MyTab(){
+  return(
+    <Tab.Navigator>
+      <Tab.Screen
+        name = 'Cart'
+        component = {Cart}
+      />
+    </Tab.Navigator>
   )
 }
 
